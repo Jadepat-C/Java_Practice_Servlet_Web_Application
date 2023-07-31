@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<HTML>
+    <HEAD>
+        <TITLE>A Sample Form Using POST</TITLE>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+        <style>
+            .bg-all {
+                background-color: #FDF5E6;
+            }
+        </style>
+
+    </HEAD>
+    <BODY class="bg-all">
+        <DIV class="container-fluid">
+            <CENTER>
+                <H1 class="h1 pt-5">A Sample Form Using POST</H1>
+                <!-- TODO:  Place your form here with the required input fields and a button. -->
+                <!-- TODO:  Make sure to use the POST method instead of the GET method. -->
+                <!-- HINT:  Look inside web.xml file to see the URL pattern for the servlet. -->
+                <H3 class="h3">Enter Peer Tutor Information</H3>
+            </CENTER>
+            <FORM ACTION="http://localhost:8080/PeerTutorServletDAO/PeerTutorServlet-URL" METHOD="POST" class="col-sm-4 mx-auto">
+                <DIV class="p-2 form-group">
+                    <label for="lastname">Peer Tutor Last Name:</label>
+                    <INPUT TYPE="TEXT" NAME="lastname" class="form-control" REQUIRED>
+                </DIV>
+                <DIV class="p-2 form-group">
+                    <label for="firstname">Peer Tutor First Name:</label>
+                    <INPUT TYPE="TEXT" NAME="firstname" class="form-control" REQUIRED>
+                </DIV>
+                <DIV class="p-2 form-group">
+                    <label for="coursecode">Course Code:</label>
+                    <INPUT TYPE="TEXT" NAME="coursecode" class="form-control" REQUIRED>
+                </DIV>  
+                <DIV class="p-2 form-group d-flex justify-content-end">
+                    <INPUT TYPE="RESET" class="btn btn-secondary mx-2 px-3">
+                    <INPUT TYPE="SUBMIT" class="btn btn-primary ml-2 px-3"> <!-- Press this button to submit form -->
+
+                </DIV> 
+
+            </FORM>
+
+        </DIV>
+    </BODY>
+</HTML>
